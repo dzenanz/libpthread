@@ -35,6 +35,7 @@
 #include <fcntl.h> /* Adding O_CREAT definition. */
 #include <limits.h> /* Adding INT_MAX, UINT_MAX definition.*/
 #include <process.h> /* Adding intptr_t, uintptr_t definition.*/
+#define _CRT_NO_TIME_T 1 /* Disable Win10 SDK from defining timespec. */
 #include <time.h> /* Adding time_t definition.  */
 #include <sys/types.h> /* Adding pid_t, mode_t definition.  */
 
